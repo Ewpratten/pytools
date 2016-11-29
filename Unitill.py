@@ -1,9 +1,10 @@
+import math
 import os
 
 # setting change
 
 # version number
-versnum = "2.0.0"
+versnum = "2.0.0 beta 2"
 
 # crash protection
 num1 = 0
@@ -42,6 +43,7 @@ print("_________________________________________________")
 print("|---------------selection screen----------------|")
 print("|--1. Math--------------------------------------|")
 print("|--2. BibCreator--------------------------------|")
+print("|--3. ZipRen------------------------------------|")
 print("|-----------------------------------------------|")
 print("|--99. exit-------------------------------------|")
 print("|-----------------------------------------------|")
@@ -61,6 +63,7 @@ print("By: Evan Pratten")
 # math program
 if sel1 == '1':
 	# math menu
+	print("")
 	print("|----------------select operation----------------|")
 	print("|----1.add---------------------------------------|")
 	print("|----2.subtract----------------------------------|")
@@ -101,13 +104,15 @@ if sel1 == '1':
 			print("")
 			print("You have chosen SUBTRACT")
 			print("Enter the first number")
-			num1 = input(">>")
+			a = input(">>")
 			print("Enter the second number")
-			num2 = input(">>")
+			b = input(">>")
+
+					
+
+			a - b
 			
-			awn = (num1 - num2)
-			print(num1, "-", num2, "=")
-			print(awn)
+		
 
 			#reset numbers
 			num1 = 0
@@ -162,5 +167,52 @@ else:
 	
 # bibcreator
 	if sel1 == '2':
-		random = 0
+
+# selection menu
+		print("|------------------BibCreator---------------------|")
+		print("|---------------By: Evan Pratten------------------|")
+		print("")
+		print("|----------------select media---------------------|")
+		print("|-------------------------------------------------|")
+		print("|----1. Book--------------------------------------|")
+		print("|----2. Website-----------------------------------|")
+		print("|-------------------------------------------------|")
 		
+# input		
+		borw = input (">>");
+		os.system("clear")
+
+# if book		
+		if borw == '1':
+		        fname = input ("What is the author's first name?>>");
+		        lname = input ("What is the authors' last name?>>")
+		        title = input ("What is the title of the book?>>")
+		        pubname = input ("What is the name of the publisher?>>")
+		        pubyear = input ("What year was this book published?>>")
+		        med = input ("Is the book an 'Ebook' an 'Audiobook' or 'Print'?>>")
+
+
+
+
+		        print(lname, ",", fname, ",", title, ",", pubname, ",", pubyear, ",", med)
+		        exit = input ("After you have copied the text above press ENTER to exit")
+
+# if website
+		else:
+		        fname = input ("What is the author's first name?>>");
+		        lname = input ("What is the authors' last name?>>")
+		        title = input ("What is the title of the webpage?>>")
+		        domain = input ("What is the domain name (eg. cnn.com)?>>")
+		        pubyear = input ("What date was this page published?>>")
+		        med = 'website'
+
+
+
+
+		        print(lname, ",", fname, ",", title, ",", domain, ",", pubyear, ",", med)
+		        exit = input ("After you have copied the text above press ENTER to exit")
+		
+
+
+	else:
+		r = 0
