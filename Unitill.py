@@ -4,7 +4,7 @@ import os
 # setting change
 
 # version number
-versnum = "2.0.0 beta 2"
+versnum = "2.0.0 beta 3"
 
 # crash protection
 num1 = 0
@@ -169,6 +169,8 @@ else:
 	if sel1 == '2':
 
 # selection menu
+# credits
+		print("")
 		print("|------------------BibCreator---------------------|")
 		print("|---------------By: Evan Pratten------------------|")
 		print("")
@@ -177,40 +179,56 @@ else:
 		print("|----1. Book--------------------------------------|")
 		print("|----2. Website-----------------------------------|")
 		print("|-------------------------------------------------|")
-		
+		print("")
 # input		
 		borw = input (">>");
 		os.system("clear")
 
 # if book		
 		if borw == '1':
-		        fname = input ("What is the author's first name?>>");
-		        lname = input ("What is the authors' last name?>>")
-		        title = input ("What is the title of the book?>>")
-		        pubname = input ("What is the name of the publisher?>>")
-		        pubyear = input ("What year was this book published?>>")
-		        med = input ("Is the book an 'Ebook' an 'Audiobook' or 'Print'?>>")
+			print("|-----------------BibCreator-----------------|")
+			print("")
+
+
+# input begins	
+			print("|-------What is the author's first name?-----|")
+			print("")
+			fname = input (">>")
+			os.system("clear")
+
+			print("|--------What is the author's last name?-----|")
+			print("")
+			lname = input (">>")
+
+			print("|---------What is the title of the book?-----|")
+			print("")
+			title = input (">>")
+			pubname = input ("What is the name of the publisher?>>")
+			pubyear = input ("What year was this book published?>>")
+			med = input ("Is the book an 'Ebook' an 'Audiobook' or 'Print'?>>")
+
+# input ends
 
 
 
-
-		        print(lname, ",", fname, ",", title, ",", pubname, ",", pubyear, ",", med)
-		        exit = input ("After you have copied the text above press ENTER to exit")
+			print(lname, ",", fname, ",", title, ",", pubname, ",", pubyear, ",", med)
+			exit = input ("After you have copied the text above press ENTER to exit")
+			os.system("clear")
 
 # if website
 		else:
-		        fname = input ("What is the author's first name?>>");
-		        lname = input ("What is the authors' last name?>>")
-		        title = input ("What is the title of the webpage?>>")
-		        domain = input ("What is the domain name (eg. cnn.com)?>>")
-		        pubyear = input ("What date was this page published?>>")
-		        med = 'website'
+			fname = input ("What is the author's first name?>>");
+			lname = input ("What is the authors' last name?>>")
+			title = input ("What is the title of the webpage?>>")
+			domain = input ("What is the domain name (eg. cnn.com)?>>")
+			pubyear = input ("What date was this page published?>>")
+			med = 'website'
 
 
 
 
-		        print(lname, ",", fname, ",", title, ",", domain, ",", pubyear, ",", med)
-		        exit = input ("After you have copied the text above press ENTER to exit")
+			print(lname, ",", fname, ",", title, ",", domain, ",", pubyear, ",", med)
+			exit = input ("After you have copied the text above press ENTER to exit")
 		
 
 
