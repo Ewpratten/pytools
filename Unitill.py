@@ -1,9 +1,10 @@
+import math
 import os
 
 # setting change
 
 # version number
-versnum = "1.0.0"
+versnum = "2.0.0"
 
 # crash protection
 num1 = 0
@@ -42,6 +43,7 @@ print("_________________________________________________")
 print("|---------------selection screen----------------|")
 print("|--1. Math--------------------------------------|")
 print("|--2. BibCreator--------------------------------|")
+print("|--3. ZipRen------------------------------------|")
 print("|-----------------------------------------------|")
 print("|--99. exit-------------------------------------|")
 print("|-----------------------------------------------|")
@@ -61,6 +63,7 @@ print("By: Evan Pratten")
 # math program
 if sel1 == '1':
 	# math menu
+	print("")
 	print("|----------------select operation----------------|")
 	print("|----1.add---------------------------------------|")
 	print("|----2.subtract----------------------------------|")
@@ -101,13 +104,15 @@ if sel1 == '1':
 			print("")
 			print("You have chosen SUBTRACT")
 			print("Enter the first number")
-			num1 = input(">>")
+			a = input(">>")
 			print("Enter the second number")
-			num2 = input(">>")
+			b = input(">>")
+
+					
+
+			a - b
 			
-			awn = (num1 - num2)
-			print(num1, "-", num2, "=")
-			print(awn)
+		
 
 			#reset numbers
 			num1 = 0
@@ -162,5 +167,122 @@ else:
 	
 # bibcreator
 	if sel1 == '2':
-		random = 0
+
+# selection menu
+# credits
+		print("")
+		print("|------------------BibCreator---------------------|")
+		print("|---------------By: Evan Pratten------------------|")
+		print("")
+		print("|----------------select media---------------------|")
+		print("|-------------------------------------------------|")
+		print("|----1. Book--------------------------------------|")
+		print("|----2. Website-----------------------------------|")
+		print("|-------------------------------------------------|")
+		print("")
+# input		
+		borw = input (">>");
+		os.system("clear")
+
+# if book		
+		if borw == '1':
+			print("|-----------------BibCreator-----------------|")
+			print("")
+
+
+# input begins	
+			print("|-------What is the author's first name?-----|")
+			print("")
+			fname = input (">>")
+			os.system("clear")
+
+			print("|--------What is the author's last name?-----|")
+			print("")
+			lname = input (">>")
+			os.system("clear")
+
+			print("|---------What is the title of the book?-----|")
+			print("")
+			title = input (">>")
+			os.system("clear")
+
+			print("|------What is the name of the publisher?----|")
+			print("")
+			pubname = input (">>")
+			os.system("clear")
+
+			print("|------What year was the book published?-----|")
+			print("")
+			pubyear = input (">>")
+			os.system("clear")
+
+			print("|--------------Please select-----------------|")
+			print("|--------------------------------------------|")
+			print("|----1. Print--------------------------------|")
+			print("|----2. Ebook--------------------------------|")
+			print("|----3. Audiobook----------------------------|")
+			print("|--------------------------------------------|")
+			print("")
+			med = input (">>")
+			os.system("clear")
+
+			if med == '1':
+				med2 = "Print"
+				
+
+			else:
+				if med == '2':
+					med2 = "Ebook"
+
+				else:
+					if med == '3':
+						med2 = "Audiobook"
+					
+# input ends
+
+			print(lname, ",", fname, ",", title, ",", pubname, ",", pubyear, ",", med2)
+			print("")
+			exit = input("Perss ENTER to exit")
+			os.system("clear")
+			
+
+# if website
+		else:
 		
+#input starts
+
+			print("|----------What is the author's first name?--------------|")
+			print("")
+			fname = input (">>");
+			os.system("clear")
+
+			print("|----------What is the author's last name?---------------|")
+			print("")
+			lname = input (">>")
+			os.system("clear")			
+
+			print("|---------What is the title of the webpage?--------------|")
+			print("")
+			title = input (">>")
+			os.system("clear")
+
+			print("|------------What is the doman name?---------------------|")
+			print("")
+			domain = input(">>")
+			os.system("clear")
+
+			print("|---------What date was this page published--------------|")
+			print("")
+			pubyear = input (">>")
+			med = 'website'
+			os.system("clear")
+
+
+
+			print(lname, ",", fname, ",", title, ",", domain, ",", pubyear, ",", med)
+			exit = input ("After you have copied the text above press ENTER to exit")
+			os.system("clear")
+
+
+	else:
+		r = 0
