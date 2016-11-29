@@ -4,7 +4,7 @@ import os
 # setting change
 
 # version number
-versnum = "2.0.0 beta 4"
+versnum = "2.0.0"
 
 # crash protection
 num1 = 0
@@ -248,19 +248,40 @@ else:
 
 # if website
 		else:
-			fname = input ("What is the author's first name?>>");
-			lname = input ("What is the authors' last name?>>")
-			title = input ("What is the title of the webpage?>>")
-			domain = input ("What is the domain name (eg. cnn.com)?>>")
-			pubyear = input ("What date was this page published?>>")
-			med = 'website'
+		
+#input starts
 
+			print("|----------What is the author's first name?--------------|")
+			print("")
+			fname = input (">>");
+			os.system("clear")
+
+			print("|----------What is the author's last name?---------------|")
+			print("")
+			lname = input (">>")
+			os.system("clear")			
+
+			print("|---------What is the title of the webpage?--------------|")
+			print("")
+			title = input (">>")
+			os.system("clear")
+
+			print("|------------What is the doman name?---------------------|")
+			print("")
+			domain = input(">>")
+			os.system("clear")
+
+			print("|---------What date was this page published--------------|")
+			print("")
+			pubyear = input (">>")
+			med = 'website'
+			os.system("clear")
 
 
 
 			print(lname, ",", fname, ",", title, ",", domain, ",", pubyear, ",", med)
 			exit = input ("After you have copied the text above press ENTER to exit")
-		
+			os.system("clear")
 
 
 	else:
