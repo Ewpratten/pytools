@@ -4,7 +4,7 @@ import os
 # setting change
 
 # version number
-versnum = "2.0.0 beta 3"
+versnum = "2.0.0 beta 4"
 
 # crash protection
 num1 = 0
@@ -199,21 +199,52 @@ else:
 			print("|--------What is the author's last name?-----|")
 			print("")
 			lname = input (">>")
+			os.system("clear")
 
 			print("|---------What is the title of the book?-----|")
 			print("")
 			title = input (">>")
-			pubname = input ("What is the name of the publisher?>>")
-			pubyear = input ("What year was this book published?>>")
-			med = input ("Is the book an 'Ebook' an 'Audiobook' or 'Print'?>>")
+			os.system("clear")
 
+			print("|------What is the name of the publisher?----|")
+			print("")
+			pubname = input (">>")
+			os.system("clear")
+
+			print("|------What year was the book published?-----|")
+			print("")
+			pubyear = input (">>")
+			os.system("clear")
+
+			print("|--------------Please select-----------------|")
+			print("|--------------------------------------------|")
+			print("|----1. Print--------------------------------|")
+			print("|----2. Ebook--------------------------------|")
+			print("|----3. Audiobook----------------------------|")
+			print("|--------------------------------------------|")
+			print("")
+			med = input (">>")
+			os.system("clear")
+
+			if med == '1':
+				med2 = "Print"
+				
+
+			else:
+				if med == '2':
+					med2 = "Ebook"
+
+				else:
+					if med == '3':
+						med2 = "Audiobook"
+					
 # input ends
 
-
-
-			print(lname, ",", fname, ",", title, ",", pubname, ",", pubyear, ",", med)
-			exit = input ("After you have copied the text above press ENTER to exit")
+			print(lname, ",", fname, ",", title, ",", pubname, ",", pubyear, ",", med2)
+			print("")
+			exit = input("Perss ENTER to exit")
 			os.system("clear")
+			
 
 # if website
 		else:
