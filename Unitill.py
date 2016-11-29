@@ -3,7 +3,7 @@ import os
 # setting change
 
 # version number
-versnum = "1.0.0"
+versnum = "2.0.0"
 
 # crash protection
 num1 = 0
