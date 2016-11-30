@@ -4,7 +4,7 @@ import os
 # setting change
 
 # version number
-versnum = "2.1.0 Beta 1"
+versnum = "2.1.0 Beta 3"
 
 # crash protection
 num1 = 0
@@ -18,14 +18,13 @@ print("Unitill version", versnum)
 print("By: Evan Pratten")
 print("")
 print("__________________________________________________")
-print("|---------------------[debug info]---------------|")
-print("|----script id-----------------------------------|")
-print("|------Unitill sparkils--------------------------|")
-print("|------------------------------------------------|")
-print("|-----optamized for chrome os and backtrack 5----|")
-print("|------------------------------------------------|")
+print("|-----------------[debug info]-------------------|")
 print("|------------------[WARNING]---------------------|")
 print("|------This version will not work on windows-----|")
+print("|------------------------------------------------|")
+print("|----------Some programs DO NOT WORK-------------|")
+print("|-------To find a list of these programs---------|")
+print("|-----------Look at the program info-------------|")
 print("|------------------------------------------------|")
 print("")
 print("|-----------------Press ENTER -------------------|")
@@ -307,6 +306,7 @@ else:
 			
 		else:
 			if sel1 == '88':
+# info page 1
 				print(" ________________________________________________________")
 				print("|_______________________INFO_____________________________|")
 				print("|--------------------------------------------------------|")
@@ -327,6 +327,18 @@ else:
 				print("|-----------------only accepts multiplication statements-|")
 				print("|--------------------------------------------------------|")
 				print("|-------------4. Divide----------------------------------|")
-				pront("|-----------------only accepts division statments--------|")
+				print("|-----------------only accepts division statments--------|")
 				print("|--------------------------------------------------------|")
 				print("|-------------5. experimental----------------------------|")
+				print("|-----------------accepts all statements-----------------|")
+	
+				pg2 = input ("For page 2 press ENTER")
+				os.system("clear")
+# info page 2	
+				print("|------------------------Page 2-------------------------|")
+			
+
+			else:
+				if sel1 == '99':
+					os.system("clear")
+					
